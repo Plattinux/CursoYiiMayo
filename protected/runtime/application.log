@@ -1,0 +1,471 @@
+2016/05/07 13:34:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('cambiarClave')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/cambiar...')
+#9 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/cambiarClave
+---
+2016/05/07 13:43:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/html/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/admin')
+#9 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/admin
+---
+2016/05/07 13:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cambiarClave".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('cambiarClave')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('cambiarClave')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/cambiar...')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/cambiarClave
+---
+2016/05/07 13:52:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cambiarClave".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('cambiarClave')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('cambiarClave')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/cambiar...')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/cambiarClave
+---
+2016/05/07 13:59:41 [error] [php] Undefined variable: id (/var/www/html/yiitwitter/protected/controllers/UsuarioController.php:143)
+Stack trace:
+#0 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitwitter/index.php?r=usuario/miPropiaAccion/1
+in /var/www/html/yiitwitter/protected/controllers/UsuarioController.php (143)
+in /var/www/html/yiitwitter/index.php (13)
+2016/05/07 13:59:54 [error] [php] Undefined variable: usuario (/var/www/html/yiitwitter/protected/controllers/UsuarioController.php:148)
+Stack trace:
+#0 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#1 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#2 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#3 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#5 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /var/www/html/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitwitter/index.php?r=usuario/miPropiaAccion
+in /var/www/html/yiitwitter/protected/controllers/UsuarioController.php (148)
+in /var/www/html/yiitwitter/index.php (13)
+2016/05/07 15:06:58 [error] [exception.CException] exception 'CException' with message 'Alias "ext.yiibooster.components.Booster" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/yii/framework/YiiBase.php:323
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(196): YiiBase::import('ext.yiibooster....', true)
+#1 /var/www/html/yii/framework/base/CModule.php(393): YiiBase::createComponent(Array)
+#2 /var/www/html/yii/framework/base/CModule.php(530): CModule->getComponent('yiibooster')
+#3 /var/www/html/yii/framework/base/CApplication.php(168): CModule->preloadComponents()
+#4 /var/www/html/yii/framework/YiiBase.php(125): CApplication->__construct('/var/www/html/y...')
+#5 /var/www/html/yii/framework/YiiBase.php(98): YiiBase::createApplication('CWebApplication', '/var/www/html/y...')
+#6 /var/www/html/yiitwitter/index.php(13): YiiBase::createWebApplication('/var/www/html/y...')
+#7 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/admin
+---
+2016/05/07 15:08:30 [error] [php] Undefined variable: variable (/var/www/html/yiitwitter/protected/views/usuario/index.php:14)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#2 /var/www/html/yiitwitter/protected/controllers/UsuarioController.php(128): UsuarioController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitwitter/index.php?r=usuario/index
+in /var/www/html/yiitwitter/protected/views/usuario/index.php (14)
+in /var/www/html/yiitwitter/protected/controllers/UsuarioController.php (128)
+in /var/www/html/yiitwitter/index.php (13)
+2016/05/07 15:09:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/html/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=gii
+---
+2016/05/14 09:41:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usuario".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('usuario')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('usuario')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/usuario/cr...')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=site/usuario/create
+---
+2016/05/14 10:13:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuario<7create".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario<7create')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario%3C7create
+---
+2016/05/14 10:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pais".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pais')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=pais
+---
+2016/05/14 10:44:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Pais".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('Pais')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=Pais
+---
+2016/05/14 10:44:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/html/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=gii
+---
+2016/05/14 10:44:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pais".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pais')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=pais
+---
+2016/05/14 10:44:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "pais".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('pais')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=pais
+---
+2016/05/14 10:44:58 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/html/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=gii
+---
+2016/05/14 10:45:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/html/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=gii
+---
+2016/05/14 10:46:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pais".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('pais')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('pais')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/pais')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/pais
+---
+2016/05/14 10:49:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "usuarios".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuarios')
+#1 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuarios
+---
+2016/05/14 10:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "gii".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('gii')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('gii')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/gii
+---
+2016/05/14 10:52:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /var/www/html/yii/framework/gii/GiiModule.php:170
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(263): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('gii')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=gii
+---
+2016/05/14 11:33:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "excel".' in /var/www/html/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(270): CController->missingAction('excel')
+#1 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('excel')
+#2 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/excel')
+#3 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/excel&id=37
+HTTP_REFERER=http://192.168.0.102/yiitwitter/index.php?r=usuario/admin
+---
+2016/05/14 13:41:02 [error] [php] Trying to get property of non-object (/var/www/html/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(638): TbDataColumn->renderDataCell()
+#3 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(622): TbGridView->renderDataCell()
+#4 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(578): TbGridView->renderTableRow()
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(488): TbGridView->renderTableBody()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /var/www/html/yii/framework/web/CBaseController.php(181): TbGridView->run()
+#11 /var/www/html/yiitwitter/protected/views/usuario/admin.php(136): UsuarioController->widget()
+#12 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#13 /var/www/html/yii/framework/web/CBaseController.php(95): UsuarioController->renderInternal()
+#14 /var/www/html/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#15 /var/www/html/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#16 /var/www/html/yiitwitter/protected/controllers/UsuarioController.php(182): UsuarioController->render()
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#20 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#23 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /var/www/html/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#26 /var/www/html/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#27 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /var/www/html/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitwitter/index.php?Usuario_page=2&ajax=usuario-grid&r=usuario%2Fadmin
+in /var/www/html/yiitwitter/protected/views/usuario/admin.php (136)
+in /var/www/html/yiitwitter/protected/controllers/UsuarioController.php (182)
+in /var/www/html/yiitwitter/index.php (13)
+2016/05/14 14:09:24 [error] [exception.CException] exception 'CException' with message 'Property "Usuario.0" is not defined.' in /var/www/html/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(145): CComponent->__get('0')
+#1 /var/www/html/yii/framework/base/CModel.php(596): CActiveRecord->__get('0')
+#2 /var/www/html/yiitwitter/protected/components/UserIdentity.php(18): CModel->offsetGet(0)
+#3 /var/www/html/yiitwitter/protected/models/LoginForm.php(52): UserIdentity->authenticate()
+#4 /var/www/html/yii/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#5 /var/www/html/yii/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#6 /var/www/html/yii/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#7 /var/www/html/yiitwitter/protected/controllers/SiteController.php(94): CModel->validate()
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#9 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('login')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/yiitwitter/index.php?r=site/login
+HTTP_REFERER=http://192.168.0.102/yiitwitter/index.php?r=site/login
+---
+2016/05/14 14:27:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Su solicitud es inválida.' in /var/www/html/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('usuario/update')
+#10 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /var/www/html/yiitwitter/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yiitwitter/index.php?r=usuario/update
+---
+2016/05/14 15:01:08 [error] [php] Undefined variable: esvisibledejarseguir (/var/www/html/yiitwitter/protected/views/usuario/_view.php:52)
+Stack trace:
+#0 /var/www/html/yii/framework/zii/widgets/CListView.php(291): UsuarioController->renderFile()
+#1 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(181): TbListView->renderItems()
+#2 unknown(0): TbListView->renderSection()
+#3 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#4 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(149): TbListView->renderContent()
+#5 /var/www/html/yii/framework/web/CBaseController.php(181): TbListView->run()
+#6 /var/www/html/yiitwitter/protected/views/usuario/index.php(17): UsuarioController->widget()
+#7 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#8 /var/www/html/yii/framework/web/CBaseController.php(95): UsuarioController->renderInternal()
+#9 /var/www/html/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#10 /var/www/html/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#11 /var/www/html/yiitwitter/protected/controllers/UsuarioController.php(145): UsuarioController->render()
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionIndex()
+#13 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#14 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#15 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#17 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#18 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#19 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/html/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#21 /var/www/html/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#22 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#23 /var/www/html/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#24 /var/www/html/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/yiitwitter/index.php?r=usuario/index
+in /var/www/html/yiitwitter/protected/views/usuario/_view.php (52)
+in /var/www/html/yiitwitter/protected/views/usuario/index.php (17)
+in /var/www/html/yiitwitter/protected/controllers/UsuarioController.php (145)
+2016/05/15 14:03:06 [error] [php] Trying to get property of non-object (/home/leninmhs/www/git/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(638): TbDataColumn->renderDataCell()
+#3 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(622): TbGridView->renderDataCell()
+#4 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(578): TbGridView->renderTableRow()
+#5 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(488): TbGridView->renderTableBody()
+#6 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(181): TbGridView->run()
+#11 /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php(136): UsuarioController->widget()
+#12 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(126): require()
+#13 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(95): UsuarioController->renderInternal()
+#14 /home/leninmhs/www/git/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#15 /home/leninmhs/www/git/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#16 /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php(182): UsuarioController->render()
+#17 /home/leninmhs/www/git/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionAdmin()
+#18 /home/leninmhs/www/git/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#20 /home/leninmhs/www/git/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /home/leninmhs/www/git/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /home/leninmhs/www/git/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#23 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /home/leninmhs/www/git/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /home/leninmhs/www/git/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#26 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#27 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /home/leninmhs/www/git/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /home/leninmhs/www/git/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/git/yiitwitter/index.php?Usuario_page=2&ajax=usuario-grid&r=usuario%2Fadmin
+in /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php (136)
+in /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php (182)
+in /home/leninmhs/www/git/yiitwitter/index.php (13)
+2016/05/15 14:03:18 [error] [php] Trying to get property of non-object (/home/leninmhs/www/git/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(638): TbDataColumn->renderDataCell()
+#3 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(622): TbGridView->renderDataCell()
+#4 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(578): TbGridView->renderTableRow()
+#5 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(488): TbGridView->renderTableBody()
+#6 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(181): TbGridView->run()
+#11 /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php(136): UsuarioController->widget()
+#12 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(126): require()
+#13 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(95): UsuarioController->renderInternal()
+#14 /home/leninmhs/www/git/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#15 /home/leninmhs/www/git/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#16 /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php(182): UsuarioController->render()
+#17 /home/leninmhs/www/git/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionAdmin()
+#18 /home/leninmhs/www/git/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#20 /home/leninmhs/www/git/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /home/leninmhs/www/git/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /home/leninmhs/www/git/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#23 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /home/leninmhs/www/git/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /home/leninmhs/www/git/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#26 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#27 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /home/leninmhs/www/git/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /home/leninmhs/www/git/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/git/yiitwitter/index.php?Usuario_page=2&ajax=usuario-grid&r=usuario%2Fadmin
+in /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php (136)
+in /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php (182)
+in /home/leninmhs/www/git/yiitwitter/index.php (13)
+2016/05/15 14:04:05 [error] [php] Trying to get property of non-object (/home/leninmhs/www/git/yii/framework/base/CComponent.php(612) : eval()'d code:1)
+Stack trace:
+#0 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(231): TbDataColumn->getDataCellContent()
+#1 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridColumn.php(154): TbDataColumn->renderDataCellContent()
+#2 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(638): TbDataColumn->renderDataCell()
+#3 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(622): TbGridView->renderDataCell()
+#4 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(578): TbGridView->renderTableRow()
+#5 /home/leninmhs/www/git/yii/framework/zii/widgets/grid/CGridView.php(488): TbGridView->renderTableBody()
+#6 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(181): TbGridView->renderItems()
+#7 unknown(0): TbGridView->renderSection()
+#8 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback()
+#9 /home/leninmhs/www/git/yii/framework/zii/widgets/CBaseListView.php(149): TbGridView->renderContent()
+#10 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(181): TbGridView->run()
+#11 /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php(136): UsuarioController->widget()
+#12 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(126): require()
+#13 /home/leninmhs/www/git/yii/framework/web/CBaseController.php(95): UsuarioController->renderInternal()
+#14 /home/leninmhs/www/git/yii/framework/web/CController.php(869): UsuarioController->renderFile()
+#15 /home/leninmhs/www/git/yii/framework/web/CController.php(782): UsuarioController->renderPartial()
+#16 /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php(182): UsuarioController->render()
+#17 /home/leninmhs/www/git/yii/framework/web/actions/CInlineAction.php(49): UsuarioController->actionAdmin()
+#18 /home/leninmhs/www/git/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#19 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(133): UsuarioController->runAction()
+#20 /home/leninmhs/www/git/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /home/leninmhs/www/git/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#22 /home/leninmhs/www/git/yii/framework/web/filters/CInlineFilter.php(58): UsuarioController->filterAccessControl()
+#23 /home/leninmhs/www/git/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#24 /home/leninmhs/www/git/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /home/leninmhs/www/git/yii/framework/web/CController.php(265): UsuarioController->runActionWithFilters()
+#26 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(282): UsuarioController->run()
+#27 /home/leninmhs/www/git/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#28 /home/leninmhs/www/git/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#29 /home/leninmhs/www/git/yiitwitter/index.php(13): CWebApplication->run()
+REQUEST_URI=/git/yiitwitter/index.php?Usuario_page=2&ajax=usuario-grid&r=usuario%2Fadmin
+in /home/leninmhs/www/git/yiitwitter/protected/views/usuario/admin.php (136)
+in /home/leninmhs/www/git/yiitwitter/protected/controllers/UsuarioController.php (182)
+in /home/leninmhs/www/git/yiitwitter/index.php (13)
