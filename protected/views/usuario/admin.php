@@ -38,6 +38,26 @@ return false;
 )); ?>
 </div><!-- search-form -->
 
+<?php
+$this->widget(
+	'booster.widgets.TbButtonGroup',
+		array(
+			'size' => 'large',
+			'context' => 'primary',
+			'buttons' => array(
+				array(
+					'label' => 'Reportes',
+					'items' => array(
+						array('label' => 'Exportar a Excel', 'url' => Yii::app()->createUrl('usuario/excel' )),
+						array('label' => 'Exportar a PDF', 'url' => Yii::app()->createUrl('usuario/admin' )),
+
+						)
+					),
+			),
+		)
+	); 
+?>
+
 <?php $this->widget('booster.widgets.TbGridView',array(
 'id'=>'usuario-grid',
 'dataProvider'=>$model->search(),
@@ -72,7 +92,7 @@ return false;
 			'type'=>'html',
 			'header'=>'Foto',
 			'name'=>'foto_perfil',
-			'value'=>'CHtml::image(Yii::app()->baseUrl."/images/".@$data->foto_perfil,"$data->foto_perfil",array("height"=>"60", "width"=>"60") )',
+			'value'=>'CHtml::image(Yii::app()->baseUrl."/images/".$data->foto_perfil,"$data->foto_perfil",array("height"=>"60", "width"=>"60") )',
 			'filter' =>'',
 			),
 		
@@ -96,7 +116,7 @@ array(
 'header'=>'Botones',
 'class'=>'booster.widgets.TbButtonColumn',
 'htmlOptions' => array('width' => '85', 'style' => 'text-align: center;color: blue;'),
-'template' => '{ver} {modificar} {eliminar} {pdf} {excel}',
+'template' => '{ver} {modificar} {eliminar} {pdf} {excel} {seguir}',
 'buttons' => array(
 
 'ver' => array(
@@ -122,6 +142,11 @@ array(
 	'label' => 'Generar PDF',
 	'icon' => 'glyphicon glyphicon-floppy-save',
 	'url' => 'Yii::app()->createUrl("usuario/pdf/", array("id"=>$data->id_usuario))', ),
+
+'seguir' => array(
+	'label' => 'Seguir',
+	'icon' => 'glyphicon glyphicon-plus',
+	'url' => 'Yii::app()->createUrl("seguidor/seguir/", array("id"=>$data->id_usuario))', ),
 
 'excel' => array(
 	'label' => 'Generar Excel',

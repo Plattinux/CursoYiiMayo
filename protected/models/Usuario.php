@@ -135,7 +135,7 @@ array('foto_perfil', 'file', 'types' => 'jpg,jpeg,gif,png', 'allowEmpty'=>true, 
 	{
 		// @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria=new CDbCriteria;
+		$criteria = new CDbCriteria;
 
 		$criteria->compare('id_usuario',$this->id_usuario);
 		$criteria->compare('usuario',$this->usuario,true);
@@ -153,6 +153,12 @@ array('foto_perfil', 'file', 'types' => 'jpg,jpeg,gif,png', 'allowEmpty'=>true, 
 		$criteria->compare('imagen_fondo',$this->imagen_fondo,true);
 		$criteria->compare('activo',$this->activo);
 		$criteria->compare('fecha_creacion',$this->fecha_creacion,true);
+
+		$_SESSION['datos_usuario'] = new CActiveDataProvider($this, array(
+			'criteria'=>$criteria,
+			'sort'=>array( 'defaultOrder'=>'t.id_usuario DESC', ),
+			'pagination'=>false,
+			));
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

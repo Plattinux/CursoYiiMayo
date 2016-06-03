@@ -32,7 +32,7 @@ class UsuarioController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update', 'miPropiaAccion'),
+				'actions'=>array('create','update', 'miPropiaAccion', 'pdf', 'excel'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -44,6 +44,33 @@ class UsuarioController extends Controller
 			),
 		);
 	}
+
+
+
+public function actionPdf($id){
+	
+	$model = $this->loadModel( $id );
+	
+	$datos='select (select count (*) from tweet where usuario='.$id.') as tweet,
+		(select count (*) from retweet where usuario='.$id.') as retweet,
+		(select count (*) from seguidor where seguidor='.$id.') as seguidos,
+		(select count (*) from seguidor where siguiendo='.$id.') as siguiendo';
+	
+	$consulta = Yii::app()->db->createCommand( $datos );
+	$losTweets = $consulta->queryAll();
+	
+	$this->render('informePDF', array( 'model' => $model, 'datos' => $losTweets ) );
+	
+}
+
+
+public function actionExcel(){
+	
+yii::app()->request->sendFile("listado_usuario.xls",
+$this->renderPartial('reporte_excel',array(), true));
+
+}
+
 
 	/**
 	 * Displays a particular model.

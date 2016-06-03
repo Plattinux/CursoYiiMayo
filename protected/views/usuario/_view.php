@@ -42,8 +42,8 @@ $esvisibledejarseguir = 'display:none;';
 
 //Esta siguiendo este usuario, mostrar botón dejar de seguir
 echo CHtml::ajaxLink('Dejar de Seguir',
-Yii::app()->createUrl('seguidor/dejarSeguir' , array('id' => $data->id_usuario))
-/*array(
+Yii::app()->createUrl('seguidor/dejarSeguir' , array('id' => $data->id_usuario)),
+array(
 'success'=>'js:function(string){
 $("#btn-seguir-'.$data->id_usuario.'").fadeIn();
 $("#btn-dejarseguir-'.$data->id_usuario.'").fadeOut();
@@ -53,19 +53,17 @@ $("#btn-dejarseguir-'.$data->id_usuario.'").fadeOut();
 'class' => 'btn btn-info small-btn',
 'style' => $esvisibledejarseguir,
 'confirm'=>'Estas seguro de querer dejar de seguir a '.$data->nombre_completo.'?'
-)*/);
+));
 
 
 //No esta siguiendo este usuario, mostrar botón de seguir
 echo CHtml::ajaxLink('Seguir',
 Yii::app()->createUrl('seguidor/seguir' , array('id' => $data->id_usuario)),
 array(
-        'type'      => 'GET',
-'success'=>'js:function(html){
+'success'=>'js:function(string){
 $("#btn-seguir-'.$data->id_usuario.'").fadeOut();
 $("#btn-dejarseguir-'.$data->id_usuario.'").fadeIn();
-}',
-'return' => false
+}'
 ),array(
 'id'=>'btn-seguir-'.$data->id_usuario,
 'class'=>'btn btn-danger small-btn',

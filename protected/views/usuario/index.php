@@ -14,13 +14,10 @@ array('label'=>'Manage Usuario','url'=>array('admin')),
 <?php $this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,
 'itemView'=>'_view',
+)); ?>
 
-));  ?>
 
-
-<?php 
-
-/*$this->widget('booster.widgets.TbListView',array(
+<?php /*$this->widget('booster.widgets.TbListView',array(
 'dataProvider'=>$dataProvider,
 'itemView'=>'_view',
 'template' => '{items} {pager}',
@@ -32,6 +29,4 @@ array('label'=>'Manage Usuario','url'=>array('admin')),
 'loaderText'=>'Loading...',
 'options' => array('history' => false, 'triggerPageTreshold' => 2, 'trigger'=>'Load more'),
 )
-));
-* 
-* / ?>
+)); */?>
